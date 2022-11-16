@@ -6,6 +6,9 @@ jobs:
   dispatchCommand:
     runs-on: ubuntu-latest
     steps:
+      # need to check out code to get config
+      - uses: actions/checkout@v3
+
       - name: Environment
         run: env
 
