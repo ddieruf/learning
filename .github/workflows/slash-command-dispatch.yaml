@@ -16,4 +16,4 @@ jobs:
           reactions: seen
           permission: maintain
           allow-edits: true
-          repository: ddieruf/streaming-site
+          repository: https://github.com/ddieruf/streaming-site.git
