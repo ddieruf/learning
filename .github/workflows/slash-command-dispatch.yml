@@ -1,16 +1,17 @@
-name: Slash Command Dispatch
+name: Docsbot Command Dispatch
 on:
   issue_comment:
     types: [created]
 jobs:
-  slashCommandDispatch:
+  dispatchCommand:
     runs-on: ubuntu-latest
     steps:
-      - name: Slash Command Dispatch
-        uses: peter-evans/slash-command-dispatch@v3
+      - uses: peter-evans/slash-command-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
-          commands: docsbot
+          commands: |
+            docsbot
+            docbot
           permission: none
           repository: ddieruf/streaming-site
           reactions: false
