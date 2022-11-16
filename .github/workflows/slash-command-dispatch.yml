@@ -10,11 +10,7 @@ jobs:
         uses: peter-evans/slash-command-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
-          commands: |
-            hello-world-local
-            ping-local
-            stage
+          commands: docsbot
           permission: none
-          issue-type: issue
           repository: ddieruf/streaming-site
           reactions: false
