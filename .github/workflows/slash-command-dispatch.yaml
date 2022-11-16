@@ -13,4 +13,4 @@ jobs:
           token: ${{ secrets.PAT }}
           commands: |
             stage
-          repository: https://github.com/ddieruf/streaming-site.git
+          repository: ddieruf/streaming-site
