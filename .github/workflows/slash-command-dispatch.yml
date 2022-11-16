@@ -7,10 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Slash Command Dispatch
-        id: slash-command
         uses: peter-evans/slash-command-dispatch@v3
         with:
           token: ${{ secrets.PAT }}
           commands: |
-            stage
-          repository: https://github.com/ddieruf/streaming-site.git
+            hello-world-local
+            ping-local
+          permission: none
+          issue-type: issue
