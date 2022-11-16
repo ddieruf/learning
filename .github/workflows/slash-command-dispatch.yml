@@ -13,6 +13,7 @@ jobs:
           commands: |
             hello-world-local
             ping-local
+            stage
           permission: none
           issue-type: issue
           repository: ddieruf/streaming-site
