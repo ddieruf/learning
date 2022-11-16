@@ -10,10 +10,7 @@ jobs:
         id: slash-command
         uses: peter-evans/slash-command-dispatch@v3
         with:
-          token: ${{ secrets.PAT }}
+          token: ${{ secrets.SLASH_COMMAND_SECRET }}
           commands: |
             stage
-          reactions: seen
-          permission: maintain
-          allow-edits: true
           repository: https://github.com/ddieruf/streaming-site.git
