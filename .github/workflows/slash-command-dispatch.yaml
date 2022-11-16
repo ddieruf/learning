@@ -10,7 +10,7 @@ jobs:
         id: slash-command
         uses: peter-evans/slash-command-dispatch@v3
         with:
-          token: ${{ secrets.testing-bsys }}
+          token: ${{ secrets.PAT }}
           commands: |
             stage
           repository: https://github.com/ddieruf/streaming-site.git
